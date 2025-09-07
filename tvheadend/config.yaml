@@ -6,8 +6,14 @@ arch:
 - i386
 description: TV streaming server and recorder.
 devices:
-- /dev/dvb
-- /dev/dri
+- /dev/dvb/adapter0/demux0
+- /dev/dvb/adapter0/dvr0
+- /dev/dvb/adapter0/frontend0
+- /dev/dvb/adapter0/net0
+- /dev/dvb/adapter1/demux0
+- /dev/dvb/adapter1/dvr0
+- /dev/dvb/adapter1/frontend0
+- /dev/dvb/adapter1/net0
 image: ghcr.io/gauthamvarmak/tvheadend/{arch}
 init: false
 map:
